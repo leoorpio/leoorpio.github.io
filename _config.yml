@@ -54,7 +54,7 @@ baseurl: ""
 # Outputting
 permalink:     date
 paginate_path: /page:num
-paginate:      2
+paginate:      7
 timezone:      null
 
 quiet:    false
