@@ -1,1 +1,86 @@
-_config.yml
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Zoro blog
+email: leoorpio@live.com
+description: Hei
+url: "http://www.leoorpio.space" # the base hostname & protocol for your site
+github_username:  leoorpio
+weibo_username:   leoorpio
+zhihu_username:   leoorpio
+gems: [jekyll-paginate]
+
+# Where things are
+source:       .
+destination:  ./_site
+plugins_dir:  ./_plugins
+layouts_dir:  ./_layouts
+data:     ./_data
+includes: ./_includes
+collections:  null
+
+# Handling Reading
+safe:         false
+include:      [.htaccess]
+exclude:      [README.md, blog-draft.rp]
+keep_files:   [.git, .svn]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Filtering Content
+show_drafts: null   #Process and render draft posts.
+limit_posts: 0
+future:      false  #Publish posts or collection documents with a future date.
+unpublished: false
+
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+lsi:         false  #Produce an index for related posts.
+#excerpt_separator: "\n\n"
+incremental: false
+
+# Serving
+#detach:  false
+#port:    4000
+#host:    127.0.0.1
+baseurl: ""
+
+# Outputting
+permalink:     date
+paginate_path: /page:num
+paginate:      2
+timezone:      null
+
+quiet:    false
+defaults: []
+
+# Markdown Processors
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style
+
+
