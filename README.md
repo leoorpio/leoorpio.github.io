@@ -12,6 +12,7 @@
 ## 关于博客的样式主题
 This is the base Jekyll theme，这是Windows 10 上`Jekyll new [blogname]`实现的最基本的主题。参考一些个人Jekyll博客，适当修改而成。
 
+以下是他们博客的GitHub地址
 * [如是我聞](https://github.com/pala/pala.github.io)
 * [Hux Blog](https://github.com/Huxpro/huxpro.github.io)
 * [Bruce Zhao's Blog](https://github.com/BruceZhaoR/brucezhaor.github.io)
