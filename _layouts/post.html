@@ -13,3 +13,17 @@ layout: default
   </div>
 
 </article>
+
+<div class="pagination">
+  {% if page.previous %}
+  <a class="pagination-item" href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+  {% else %}
+  <span class="pagination-item">Previous</span>
+  {% endif %}
+  
+  {% if page.next %}
+  <a class="pagination-item" href="{{ page.next.url }}">{{ page.next.title }}</a>
+  {% else %}
+  <span class="pagination-item">Next</span>
+  {% endif %}
+</div>
