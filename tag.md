@@ -4,7 +4,7 @@ title: Tag
 permalink: /tag/
 ---
 {% for tag in site.tags %}
-  [{{ tag | first }}](#{{ tag | first }})
+ 	[{{ tag | first }}](#{{ tag | first }})
 {% endfor %}
 {% for tag in site.tags %}
 <h2>
