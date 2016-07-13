@@ -16,3 +16,15 @@ This is the base Jekyll theme，这是Windows 10 上`Jekyll new [blogname]`实�
 * [如是我聞](https://github.com/pala/pala.github.io)
 * [Hux Blog](https://github.com/Huxpro/huxpro.github.io)
 * [Bruce Zhao's Blog](https://github.com/BruceZhaoR/brucezhaor.github.io)
+
+## 学习Jekyll参考网站
+* [Jekyll 英文版Docs](http://jekyllrb.com/docs/home/ "Docs en")
+* [Jekyll 中文版Docs](http://jekyllcn.com/ "Docs cn");部分翻译不准确，仅供参考
+* [Liquid for Designers](https://github.com/shopify/liquid/wiki/liquid-for-designers "Liquid grammer")
+* [Jekyll简单教程](http://www.zhanxin.info/jekyll/2013-08-07-jekyll-doc-installation.html)
+
+## 修改博客
+2016-07-13
+- [x] 目前可以在palm和laptop查看。smart版暂时不友好。
+- [x] posts展示功能
+- [x] tags展示功能
