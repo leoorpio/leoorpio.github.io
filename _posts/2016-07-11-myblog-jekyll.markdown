@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "关于Jekyll blog 的一二"
+title:  关于Jekyll blog 一二
 date:   2016-07-11 14:52:57 +0800
 categories: jekyll
 tags:
