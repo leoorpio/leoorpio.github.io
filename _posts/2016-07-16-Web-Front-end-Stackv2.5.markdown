@@ -47,8 +47,9 @@ tags:
 25. [移动应用开发(Mobile Application Development)](#a25)  
 26. [桌面应用开发(Desktop Application Development)](#a26)  
 
+-------
 
-- <a id="a01">Broswer</a>  
+- <a id="a01">1. Broswer</a>  
   - [Internet Explorer](http://windows.microsoft.com/en-us/internet-explorer/download-ie)
   - [Chrome](http://www.google.com/chrome/)
   - [Firefox](https://www.mozilla.org/)
@@ -57,7 +58,7 @@ tags:
   - [Edge](https://www.microsoft.com/en-us/windows/microsoft-edge)
   - [Netscape ;-)](https://en.wikipedia.org/wiki/Netscape)
 
-- <a id="a02">Protocol</a>  
+- <a id="a02">2. Protocol</a>  
 	- [HTTP/1.1](https://www.ietf.org/rfc/rfc2616.txt)
 		- URI
 		- Session
@@ -69,17 +70,17 @@ tags:
 		- Minification
 		- Server Push
 	- WebSocket
-- <a id="a03">The 3 Pillars</a>
+- <a id="a03">3. The 3 Pillars</a>
 	- HTML (HyperText Markup Language)
 	- CSS (Cascading Style Sheets)
 	- JavaScript
-- <a id="a04">Standards</a>
+- <a id="a04">4. Standards</a>
 	- W3C
 		- HTML
 		- CSS
 		- XHTML
 		- XML
-- <a id="a05">Core Concepts</a>
+- <a id="a05">5. Core Concepts</a>
 	- HTML
 		- [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 		- [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
@@ -95,20 +96,20 @@ tags:
 		- Priority
 		- Specificity
 		- Box Model
-- <a id="a06">Rendering Engine</a>
+- <a id="a06">6. Rendering Engine</a>
 	- [Trident (IE)](https://en.wikipedia.org/wiki/Trident_(layout_engine))
 	- [Blink / prev. WebKit (Chrome)](http://www.chromium.org/blink)
 	- [Gecko (Firefox)](https://developer.mozilla.org/en-us/docs/Mozilla/Gecko)
 	- [WebKit (Safari)](http://www.webkit.org/)
 	- [Blink / prev. Presto (Opera)](http://www.chromium.org/blink)
 	- [EdgeHTML (Edge)](https://en.wikipedia.org/wiki/EdgeHTML)
-- <a id="a07">JavaScript Engine</a>
+- <a id="a07">7. JavaScript Engine</a>
 	- [JScript (IE8- / ASP)](https://en.wikipedia.org/wiki/JScript)
 	- [Chakra (IE9+ / Edge)](https://en.wikipedia.org/wiki/Chakra_(JScript_engine))
 	- [V8 (Chrome / Opera / Nodejs / MongoDB)](https://developers.google.com/v8/?hl=zh-CN) [[GitHub]](https://github.com/v8/v8/)
 	- [SpiderMonkey (Firefox)]( https://developer.mozilla.org/en-us/docs/Mozilla/Projects/SpiderMonkey)
 	- [Nitro (Safari)](https://en.wikipedia.org/wiki/WebKit#JavaScriptCore)
-- <a id="a08">Runtime</a>
+- <a id="a08">8. Runtime</a>
 	- Cookie
 	- Local Cache
 	- Session Storage
@@ -122,7 +123,7 @@ tags:
 		- Fonts
 		- Audios
 		- Videos
-- <a id="a09">Editors</a>
+- <a id="a09">9. Editors</a>
 	- [Sublime Text](http://www.sublimetext.com/)
 	- [WebStorm](https://www.jetbrains.com/webstorm/)
 	- [Atom](https://atom.io/) [[GitHub]](https://github.com/atom/atom/)
@@ -134,35 +135,35 @@ tags:
 	- [Visual Studio Code](https://code.visualstudio.com/) [[GitHub]](https://github.com/Microsoft/vscode)
 	- Dreamweaver ;-)
 	- FrontPage / SharePoint Designer ;-)
-- <a id="a10">Build Tasks</a>
+- <a id="a10">10. Build Tasks</a>
 	- Minification
 	- Compilation
 	- Concatenation
 	- Uglification
 	- Image Optimization
 	- Unit Testing
-- <a id="a11">Build Tools</a>
+- <a id="a11">11. Build Tools</a>
 	- [Grunt](http://www.gruntjs.com/) [[GitHub]](https://github.com/cowboy/jquery-tiny-pubsub/)
 	- [Gulp](http://gulpjs.com/) [[GitHub]](https://github.com/gulpjs/gulp/)
 	- [Brunch](http://brunch.io/) [[GitHub]](https://github.com/brunch/brunch/)
 	- [Yeoman](http://yeoman.io/)
 	- Broccoli [[GitHub]](https://github.com/broccolijs/broccoli/)
-- <a id="a12">Debug</a>
+- <a id="a12">12. Debug</a>
 	- [Developer Tools](https://developer.chrome.com/devtools)
 	- [Firebug](http://getfirebug.com/) [[GitHub]](https://github.com/firebug/firebug/)
-- <a id="a13">Base Tools</a>
+- <a id="a13">13. Base Tools</a>
 	- [Node.js](https://nodejs.org/) [[GitHub]](https://github.com/joyent/node/)
 	- [Phantom.js](http://phantomjs.org/) [[GitHub]](https://github.com/ariya/phantomjs/)
 	- [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey)
-- <a id="a14">Quality</a>
+- <a id="a14">14. Quality</a>
 	- [JSLint](http://www.jslint.com/) [[GitHub]](https://github.com/douglascrockford/JSLint/)
 	- [JSHint](http://jshint.com/) [[GitHub]](https://github.com/jshint/jshint/)
 	- [jscs](http://jscs.info/) [[GitHub]](https://github.com/jscs-dev/node-jscs)
 	- [Closure Linter](https://developers.google.com/closure/utilities/)
-- <a id="a15">Package</a>
+- <a id="a15">15. Package</a>
 	- [npm](https://www.npmjs.com/) [[GitHub]](https://github.com/npm/npm/)
 	- [Bower](http://bower.io/) [[GitHub]](https://github.com/bower/bower/)
-- <a id="a16">Test</a>
+- <a id="a16">16. Test</a>
 	- Tools
 		- [QUnit](https://qunitjs.com/) [[GitHub]](https://github.com/jquery/qunit/)
 		- [Jasmine](http://jasmine.github.io/) [[GitHub]](https://github.com/jasmine/jasmine/)
@@ -185,7 +186,7 @@ tags:
 		- [Cross Browser Testing](https://crossbrowsertesting.com/)
 		- [Browsera](http://www.browsera.com/)
 		- [SortSite](http://www.powermapper.com/products/sortsite/checks/browser-compatibility/)
-- <a id="a17">Frameworks / Libraries</a>
+- <a id="a17">17. Frameworks / Libraries</a>
 	- JavaScript base library
 		- [jQuery](https://jquery.com/) [[GitHub]](https://github.com/jquery/jquery/)
 		- [Prototype](http://prototypejs.org/) [[GitHub]](https://github.com/sstephenson/prototype/)
@@ -261,7 +262,7 @@ tags:
 		- [Jo](http://joapp.com/) [[GitHub]](https://github.com/davebalmer/jo/)
 		- [Dojo Mobile](https://dojotoolkit.org/reference-guide/1.10/dojox/mobile.html)
 		- [Lungo](http://lungo.tapquo.com/) [[GitHub]](https://github.com/tapquo/Lungo.js/)
-- <a id="a18">CSS Pre-processors</a>
+- <a id="a18">18. CSS Pre-processors</a>
 	- LESS
 		- [LESS](http://lesscss.org/) [[GitHub]](https://github.com/less/less.js/)
 		- [Hat](http://lesshat.madebysource.com/) [[GitHub]](https://github.com/csshat/lesshat/)
@@ -271,9 +272,9 @@ tags:
 		- [Gumby](http://www.gumbyframework.com/) [[GitHub]](https://github.com/GumbyFramework/Gumby/)
 	- Stylus
 		- nib [[GitHub]](https://github.com/tj/nib/)
-- <a id="a19">Future Standards</a>
+- <a id="a19">19. Future Standards</a>
 	- [babel](https://babeljs.io/) [[GitHub]](https://github.com/babel/babel)
-- <a id="a20">Template</a>
+- <a id="a20">20. Template</a>
 	- [Handlebars](http://handlebarsjs.com/) [[GitHub]](https://github.com/wycats/handlebars.js/)
 	- [Haml](http://haml.info/) [[GitHub]](https://github.com/haml/haml/)
 	- [Slim](http://slim-lang.com/) [[GitHub]](https://github.com/slim-template/slim/)
@@ -281,27 +282,27 @@ tags:
 	- [Ejs](http://www.embeddedjs.com/)
 	- [Spacebars](http://meteorcapture.com/spacebars/)
 	- [mustache](http://mustache.github.io/) [[GitHub]](https://github.com/janl/mustache.js/)
-- <a id="a21">Modernisation</a>
+- <a id="a21">21. Modernisation</a>
 	- [Normalize](http://necolas.github.io/normalize.css/) [[GitHub]](https://github.com/necolas/normalize.css/)
 	- Reset
-- <a id="a22">Best Practices</a>
+- <a id="a22">22. Best Practices</a>
 	- [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization)
 	- Responsiveness
 	- [CDN](https://en.wikipedia.org/wiki/Content_delivery_network)
-- <a id="a23">Security</a>
+- <a id="a23">23. Security</a>
 	- Sandbox
 	- [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting)
 	- [CORS](http://www.w3.org/TR/cors/)
-- <a id="a24">Intermediate Languages</a>
+- <a id="a24">24. Intermediate Languages</a>
 	- [CoffeeScript](http://coffeescript.org/) [[GitHub]](https://github.com/jashkenas/coffeescript/)
 	- [TypeScript](http://www.typescriptlang.org/) [[GitHub]](https://github.com/Microsoft/TypeScript/)
 	- ClojureScript [[GitHub]](https://github.com/clojure/clojurescript/)
 	- [JSX (Facebook)](http://facebook.github.io/react/docs/jsx-in-depth.html)
-- <a id="a25">Mobile Application Development</a>
+- <a id="a25">25. Mobile Application Development</a>
 	- [PhoneGap / Cordova](https://cordova.apache.org/) [[GitHub]](https://github.com/apache/cordova-android/)
 	- [MUI](http://dev.dcloud.net.cn/mui/) [[GitHub]](https://github.com/dcloudio/mui/)
 	- [React Native](https://facebook.github.io/react-native/) [[GitHub]](https://github.com/facebook/react-native/)
 	- [Ionic](http://ionicframework.com/) [[GitHub]](https://github.com/driftyco/ionic/)
-- <a id="a26">Desktop Application Development</a>
+- <a id="a26">26. Desktop Application Development</a>
 	- [Electron](http://electron.atom.io/) [[GitHub]](https://github.com/atom/electron)
 	- [NW.js](http://nwjs.io/) [[GitHub]](https://github.com/nwjs/nw.js)
