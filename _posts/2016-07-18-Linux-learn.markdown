@@ -137,7 +137,8 @@ tags:
 > > 与more命令基本类似，但个别操作会有出入
 
 
-  - head、tail、wc、grep
+  - head、tail、wc、grep  
+
 > head ：查看文件开头的一部分内容（默认为10行）
 > > head -n 文件名
 
