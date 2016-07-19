@@ -4,32 +4,32 @@
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
-
+# 
 # Site settings
 title: Zoro blog
 email: leoorpio@live.com
 description: Hei
 url: "http://www.leoorpio.space" # the base hostname & protocol for your site
-github_username:  leoorpio
-weibo_username:   leoorpio
-zhihu_username:   leoorpio
-gems: [jekyll-paginate]
+github_username: leoorpio
+weibo_username: leoorpio
+zhihu_username: leoorpio
+gems: [jekyll-coffeescript, jekyll-paginate]
 
 # Where things are
-source:       .
-destination:  ./_site
-plugins_dir:  ./_plugins
-layouts_dir:  ./_layouts
-data:     ./_data
+source: .
+destination: ./_site
+plugins_dir: ./_plugins
+layouts_dir: ./_layouts
+data: ./_data
 includes: ./_includes
-collections:  null
+collections: null
 
 # Handling Reading
-safe:         false
-include:      [.htaccess]
-exclude:      [README.md, blog-draft.rp, read.md, picture.md, timeline.md]
-keep_files:   [.git, .svn]
-encoding:     "utf-8"
+safe:  true
+include:  [.htaccess]
+exclude:  [README.md, blog-draft.rp, read.md, picture.md, timeline.md]
+keep_files:  [.git, .svn]
+encoding:  "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Filtering Content
@@ -39,9 +39,9 @@ future:      false  #Publish posts or collection documents with a future date.
 unpublished: false
 
 # Conversion
-markdown:    kramdown
+markdown:  kramdown
 highlighter: rouge
-lsi:         false  #Produce an index for related posts.
+lsi:  false  #Produce an index for related posts.
 #excerpt_separator: "\n\n"
 incremental: false
 
@@ -52,12 +52,12 @@ incremental: false
 baseurl: ""
 
 # Outputting
-permalink:     date
+permalink: date
 paginate_path: /page:num
-paginate:      7
-timezone:      null
+paginate: 7
+timezone: null
 
-quiet:    false
+quiet: false
 defaults: []
 
 # Markdown Processors
@@ -68,5 +68,10 @@ redcarpet:
   extensions: []
 
 kramdown:
-  input:          GFM
+  input: GFM
+  hard_wrap: false
 
+# the configuration below will causes wrong
+# github: [metadata]
+# gist:
+#   noscript: false

@@ -18,14 +18,14 @@ tags:
 3. 两者GitHub上都能找到很多templates。
 
 ### 2. 说在前面（preface）
-   第一次接触如何搭建Jekyll静态博客，从这里入手[搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html) 的，阮一峰前辈的一篇文章。
+   第一次接触如何搭建Jekyll静态博客，从这里入手[搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html){:target="_blank"} 的，阮一峰前辈的一篇文章。
 
 ### 3. 接下来  
   
 #### 3.1 前提（precondition）
-   1. 拥有个人的GitHub账号，如果没有，赶快去注册一个吧：[传送门](https://www.github.com "github官网")
-   2. 慕课网有关于**GitHub**的教程：[传送门](http://www.imooc.com/learn/390)
-   3. 这里有关于如何使用**Git**的教程：[传送门](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)，如果想快速上手，可以百度一下Git的常用命令大全。
+   1. 拥有个人的GitHub账号，如果没有，赶快去注册一个吧：[传送门](https://www.github.com "github官网"){:target="_blank"}
+   2. 慕课网有关于**GitHub**的教程：[传送门](http://www.imooc.com/learn/390){:target="_blank"}
+   3. 这里有关于如何使用**Git**的教程：[传送门](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000){:target="_blank"}，如果想快速上手，可以百度一下Git的常用命令大全。
    4. 如果遇到问题了，可到网站上搜索，可能会在GitHub的**issues**中找到。
 
 
@@ -38,23 +38,23 @@ tags:
   我喜欢这位[Hux Blog](https://github.com/Huxpro/huxpro.github.io)的博客风格，我也保存下来了。
   有了喜欢的模板，可以直接在拿过来作为自己的博客风格。**注意作者对于版权的要求**。然后适当修改配置和删掉原作者`_posts`和`照片目录`等相关文件，然后加入自己的内容。发布到自己的GitHub上。在直接套用可能会遇到一些语法不了解的。那么你可以从下面这几个网站找到自己的答案：
   
-* [Jekyll 英文文档](https://jekyllrb.com/docs/home/ "Jekyll 文档 en-us")
-* [Jekyll 中文文档，这里面会有翻译不精确的地方，仅供参考](http://jekyllcn.com/ "Jekyll 文档zh-cn")
-* [Jekyll 简单教程](http://www.zhanxin.info/jekyll/2013-08-07-jekyll-doc-installation.html "简单教程")
-* Liquid语法：[Liquid for Designers](https://github.com/shopify/liquid/wiki/liquid-for-designers "Liquid grammer" "Liquid grammer")
+* [Jekyll 英文文档](http://jekyllrb.com/docs/home/ "Jekyll 文档 en-us"){:target="_blank"}
+* [Jekyll 中文文档，这里面会有翻译不精确的地方，仅供参考](http://jekyllcn.com/ "Jekyll 文档zh-cn"){:target="_blank"}
+* [Jekyll 简单教程](http://www.zhanxin.info/jekyll/2013-08-07-jekyll-doc-installation.html "简单教程"){:target="_blank"}
+* Liquid语法：[Liquid for Designers](https://github.com/shopify/liquid/wiki/liquid-for-designers "Liquid grammer" "Liquid grammer"){:target="_blank"}
 
 #### 3.4 Method 3  
    我选择的是第三种方法。自己参考文档、一些好的Blog GitHub源码。在本地生成Jekyll，适当修改自己的样式风格，里面的配置，目录等，然后上传到自己的GitHub上。  
    我用的是Windows 10 x64。根据官方文档的[本地Jekyll使用要求](https://jekyllrb.com/docs/installation/)。我们需要安装如下内容到本地电脑,我以本人的Windows来作介绍。
 
-   * [Ruby](https://www.ruby-lang.org/en/downloads/)
-   * [RubyGems](https://rubygems.org/pages/download "对Ruby进行组件打包的Ruby打包系统")
+   * [Ruby](https://www.ruby-lang.org/en/downloads/){:target="_blank"}
+   * [RubyGems](https://rubygems.org/pages/download "对Ruby进行组件打包的Ruby打包系统"){:target="_blank"}
    * OS（Linux，Unix，Mac OSX，Windows）
-   * [Node.js](https://nodejs.org/en/),, or another JavaScript runtime (Jekyll 2 and earlier, for CoffeeScript support).
-   * [Python 2.7](https://www.python.org/downloads/)。
+   * [Node.js](https://nodejs.org/en/), or another JavaScript runtime (Jekyll 2 and earlier, for CoffeeScript support).
+   * [Python 2.7](https://www.python.org/downloads/){:target="_blank"}。
   
 > **提示**：
-> 安装的时候注意的软件的配置要求。对于Windows下安装Ruby，可参考这篇百度经验：[传送门](http://jingyan.baidu.com/album/48b558e33558ac7f38c09aee.html?picindex=4)。建议解压DevKit时，不要解压到Ruby的安装目录。
+> 安装的时候注意的软件的配置要求。对于Windows下安装Ruby，可参考这篇百度经验：[传送门](http://jingyan.baidu.com/album/48b558e33558ac7f38c09aee.html?picindex=4){:target="_blank"}。建议解压DevKit时，不要解压到Ruby的安装目录。
 
 
 
@@ -81,13 +81,13 @@ C:\Users\xxx>gem install Jekyll
 ```
 
 这里的操作，可以参考官方文档。  
-需要注意的是。安装的时候，根据官网文档的提示。如果安装了预览版。在`jekyll serve`命令下时，会遇到这样的错误。详情看这里：[传送门](https://github.com/jekyll/jekyll/issues/4677)。出现的错误提示如下：  
+需要注意的是。安装的时候，根据官网文档的提示。如果安装了预览版。在`jekyll serve`命令下时，会遇到这样的错误。详情看这里：[传送门](https://github.com/jekyll/jekyll/issues/4677){:target="_blank"}。出现的错误提示如下：  
 
 ```bash
 jekyll 3.2.0.pre.beta1 | Error:  different prefix: "/" 
 ```
 
-当时自己就蒙了。还好在[Jekyll](https://github.com/jekyll/jekyll "GitHub的Jekyll项目")中找到。这是Windows的下预览版本的一个bug，于是卸载了预览版本。安装了`jekyll 3.1.6`稳定版本。  
+当时自己就蒙了。还好在[Jekyll](https://github.com/jekyll/jekyll "GitHub的Jekyll项目"){:target="_blank"}中找到。这是Windows的下预览版本的一个bug，于是卸载了预览版本。安装了`jekyll 3.1.6`稳定版本。  
 
 可以在命令窗口中通过`gem list`查看已经安装了哪些**ruby**组件：  
 
@@ -137,7 +137,7 @@ jekyll (3.1.6)
 
 1. 关于配置文件 `_config.yml`里面的内容还真不少。文档简单的介绍。但是用的时候会一头雾水。查看其它人多模板时，发现用的格式也不一。看了几遍之后，目前大体有了认识。
 
-2. 在本地运行jekyll时候，会遇到包找不到的问题，第一次接触rubygems,运行出错的提示看不懂，尝试在stackoverflow找答案。没有找到。后来明白是缺少包的缘故。于是运行的时候，缺少什么，我就到[传送门](https://rubygems.org/)到这里搜。如当时自己遇到的是bundle包的问题。然后自己找到安装链接。然后在命令窗口中：
+2. 在本地运行jekyll时候，会遇到包找不到的问题，第一次接触rubygems,运行出错的提示看不懂，尝试在stackoverflow找答案。没有找到。后来明白是缺少包的缘故。于是运行的时候，缺少什么，我就到[传送门](https://rubygems.org/){:target="_blank"}到这里搜。如当时自己遇到的是bundle包的问题。然后自己找到安装链接。然后在命令窗口中：
 
 ```bash
 gem install bundle
@@ -150,5 +150,23 @@ gem install bundle
 4. YAML Front matter，_config.yml不要用Tag，用空格进行缩减  
 
 
-----------------------------
+
+
 以上是一些大体的介绍，具体的操作需要各自去摸索。
+
+---------------------------分割线---------------------
+
+#### 4 补充
+
+近期打算开始更新自己博客的样式风格，原始的markdown解析成网页效果很不美观，打算换一个markdown解析。
+后来看到了一篇文章[Using Jekyll as a static site generator with GitHub Pages](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/){:target="_blank"}，这是关于在github上使用Jekyll的要点。了解到了之前自己一直是Jekyll的官方的引擎生成静态HTML，终端命令如下：
+
+```bash
+C:\Users\XXX\Documents\GitHub\leoorpio.github.io>jekyll serve --watch  
+```  
+
+github pages使用jekyll与jekyll官方的在语法上有很大差别—— 这会导致用官方jekyll测试生效，推到github pages后却不会生效。所以自己开始改用github pages的自己的引擎：`bundle exec jekyll serve`来生成静态页面。
+
+```bash
+C:\Users\XXX\Documents\GitHub\leoorpio.github.io>bundle exec jekyll serve
+```  
