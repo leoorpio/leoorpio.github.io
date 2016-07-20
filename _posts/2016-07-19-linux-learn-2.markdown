@@ -114,14 +114,53 @@ drwx------  3 zoro zoro 4096 7月  19 17:08 .gnupg
 ```
   
   **二是通过符号来进行权限的更改。**  
-
-```
-    User（u）：具有可读、可写、可执行的权限
-    group与others（g/o）：具有可读与执行的权限。
-```
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center">
+  <tr>
+    <td>chmod</td>
+	<td>u<br/>g<br/>o<br/>a</td>
+	<td>+(加入)<br/>-（减去）<br/>=（设置）</td>
+	<td>r<br/>w<br/>x</td>
+	<td>文件或目录</td>
+  </tr>
+</table>
 举个例子：
 
 ```
-[root@www~ ]# chmod u=rwx,go=rx 文件或目录
+zoro@ubuntu:~/Documents$ ll
+总用量 16
+drwxr-xr-x  4 zoro zoro 4096 7月  20 15:59 ./
+drwxr-xr-x 20 zoro zoro 4096 7月  20 15:55 ../
+drwxrwxr-x  2 zoro zoro 4096 7月  20 15:59 tao/
+drwxr-xr-x  9 zoro zoro 4096 2月  26 06:26 vmware-tools-distrib/
+zoro@ubuntu:~/Documents$ chmod u=rwx,go=rw tao
+zoro@ubuntu:~/Documents$ ll
+总用量 16
+drwxr-xr-x  4 zoro zoro 4096 7月  20 15:59 ./
+drwxr-xr-x 20 zoro zoro 4096 7月  20 15:55 ../
+drwxrw-rw-  2 zoro zoro 4096 7月  20 15:59 tao/
+drwxr-xr-x  9 zoro zoro 4096 2月  26 06:26 vmware-tools-distrib/
 
-```  
+
+``` 
+ 
+留意文件夹`tao`，原来的是drwxrwxr-x,执行`chmod u=rwx,go=rw tao`后变为drwxrw-rw-。  
+如果我们不知道原先的文档属性，而我只想要增加tao这个文件夹的每个人均可执行的权限，那么我就可以使用：
+
+```
+zoro@ubuntu:~/Documents$ ls -al
+总用量 16
+drwxr-xr-x  4 zoro zoro 4096 7月  20 15:59 .
+drwxr-xr-x 20 zoro zoro 4096 7月  20 15:55 ..
+drwxrw-rw-  2 zoro zoro 4096 7月  20 15:59 tao
+drwxr-xr-x  9 zoro zoro 4096 2月  26 06:26 vmware-tools-distrib
+zoro@ubuntu:~/Documents$ chmod a+x tao
+zoro@ubuntu:~/Documents$ ll
+总用量 16
+drwxr-xr-x  4 zoro zoro 4096 7月  20 15:59 ./
+drwxr-xr-x 20 zoro zoro 4096 7月  20 15:55 ../
+drwxrwxrwx  2 zoro zoro 4096 7月  20 15:59 tao/
+drwxr-xr-x  9 zoro zoro 4096 2月  26 06:26 vmware-tools-distrib/
+zoro@ubuntu:~/Documents$ 
+
+```
+a代表all，u代表user，g代表group，o代表other。
