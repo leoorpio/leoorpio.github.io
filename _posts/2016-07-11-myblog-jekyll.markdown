@@ -159,14 +159,39 @@ gem install bundle
 #### 4 补充
 
 近期打算开始更新自己博客的样式风格，原始的markdown解析成网页效果很不美观，打算换一个markdown解析。
-后来看到了一篇文章[Using Jekyll as a static site generator with GitHub Pages](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/){:target="_blank"}，这是关于在github上使用Jekyll的要点。了解到了之前自己一直是Jekyll的官方的引擎生成静态HTML，终端命令如下：
+后来看到了一篇文章[Using Jekyll as a static site generator with GitHub Pages](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/){:target="_blank"}。
+这是关于在github上使用Jekyll的要点。开始之前建议先阅读一番。
+在这个过程中（包括看一些博客）了解到之前自己一直是Jekyll的官方的引擎生成静态HTML，终端命令如下：
 
 ```bash
 C:\Users\XXX\Documents\GitHub\leoorpio.github.io>jekyll serve --watch  
 ```  
 
 github pages使用jekyll与jekyll官方的在语法上有很大差别—— 这会导致用官方jekyll测试生效，推到github pages后却不会生效。所以自己开始改用github pages的自己的引擎：`bundle exec jekyll serve`来生成静态页面。
+在此之前，需要再自己的Jekyll site 根目录配置`Gemfile`文件[传送门](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/){:target="_blank"}：  
+
+```ruby
+source 'https://rubygems.org'
+gem 'github-pages', group: :jekyll_plugins
+```
+
+**注意**，配置了`Gemfile`文件再运行`jekyll serve`会报错的。如下：
+
+```
+C:\Users\XXX\Documents\GitHub\leoorpio.github.io>jekyll serve
+WARN: Unresolved specs during Gem::Specification.reset:
+      listen (< 3.1, ~> 3.0)
+WARN: Clearing out unresolved specs.
+Please report a bug if this causes problems.
+Configuration file: C:/Users/leoor/Documents/GitHub/leoorpio.github.io/_config.yml
+  Dependency Error: Yikes! It looks like you don't have kramdown or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. The full error message from Ruby is: 'cannot load such file -- kramdown' If you run into trouble, you can find helpful resources at http://jekyllrb.com/help/!
+jekyll 3.1.6 | Error:  kramdown
+```
+直接在终端运行`Github pages`的解析器即可：  
 
 ```bash
 C:\Users\XXX\Documents\GitHub\leoorpio.github.io>bundle exec jekyll serve
 ```  
+
+
+
