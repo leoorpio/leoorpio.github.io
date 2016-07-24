@@ -73,3 +73,10 @@ ssh [-p:端口号]@ip:[/directory]
 ### 4 Tips
 相对于传统的网络服务程序，如：ftp、pop和Telnet在本质上都是不安全的，因为他们在网络上用明文传送口令和数据，有心人很容易截取这些口令和数据。使用SSH，可以把所有传输的数据进行加密。  
 SSH有很多功能，它既可以代替Telnet，又可以为FTP、PoP、甚至PPP提供一个安全的”通道”。 
+
+### 5 PuTTy  
+[PuTTy官网](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
+```  
+PuTTY is a free implementation of SSH and Telnet for Windows and Unix platforms, along with an xterm terminal emulator
+```
+在Windows是上，用PuTTy远程管理Linux十分好用。
