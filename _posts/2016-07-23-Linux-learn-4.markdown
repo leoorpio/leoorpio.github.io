@@ -75,8 +75,12 @@ ssh [-p:端口号]@ip:[/directory]
 SSH有很多功能，它既可以代替Telnet，又可以为FTP、PoP、甚至PPP提供一个安全的”通道”。 
 
 ### 5 PuTTy  
-[PuTTy官网](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
+[PuTTy官网](http://www.chiark.greenend.org.uk/~sgtatham/putty/)  
+
 ```  
 PuTTY is a free implementation of SSH and Telnet for Windows and Unix platforms, along with an xterm terminal emulator
-```
+```  
+
+PuTTY是一个Telnet、SSH、rlogin、纯TCP以及串行接口连接软件。较早的版本仅支持Windows平台，在最近的版本中开始支持各类Unix平台，并打算移植至Mac OS X上。  
+
 在Windows是上，用PuTTy远程管理Linux十分好用。
