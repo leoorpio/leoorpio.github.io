@@ -138,7 +138,9 @@ export PATH=${JAVA_HOME}/bin:$PATH
 
 配置好后，通过命令`source ~/.bashrc`立即生效。  
 
-然后可以通过`java -version`查看安装结果。
+然后可以通过`java -version`查看安装结果。  
+
+
 ```bash
 java version "1.8.0_73"
 Java(TM) SE Runtime Environment (build 1.8.0_73-b02)
