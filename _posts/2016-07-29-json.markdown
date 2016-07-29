@@ -10,9 +10,60 @@ tags:
 JSON（[介绍](http://www.json.org/json-zh.html)）：JavaScript Object Notation，中文意思：JavaScript对象表示法。  
 
 
+- [JSON参考文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON)  
+- [JSON在线校验网站](http://www.kjson.com/)
+
 JSON是一种轻量级的数据交换格式。 易于人阅读和编写。同时也易于机器解析和生成。 它基于JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999的一个子集。 JSON采用完全独立于语言的文本格式，但是也使用了类似于C语言家族的习惯（包括C, C++, C#, Java, JavaScript, Perl, Python等）。 这些特性使JSON成为理想的数据交换语言。  
 
 JSON和对象字面量表示法非常相似，但是二者之间又有两个关键的区别：对象字面量表示法使用单引号或双引号封装属性名，甚至可以不使用任何引号，而在JSON中却是强制使用引号的。另外，JSON中所有字符串都需要包含在双引号中。
 
-在node.js中，我们经常使用V8的JSON.parse和JSON.stringify。前者接受一个JSON字符串作为参数，并将其转换为一个对象（如果失败，则抛出一个错误），而后者接收一个对象作为参数，并返回一个JSON字符串表示。
+在node.js中，我们经常使用V8的JSON.parse和JSON.stringify。前者接受一个JSON字符串作为参数，并将其转换为一个对象（如果失败，则抛出一个错误），而后者接收一个对象作为参数，并返回一个JSON字符串表示。  
+
+### 1. JSON.parse  
+
+JSON.parse() 方法可以将一个 JSON 字符串解析成为一个 JavaScript 值。在解析过程中，还可以选择性的修改某些属性的原始解析值。  
+
+**语法**  
+
+```javascript
+JSON.parse(text[, reviver])
+
+```
+
+
+**参数**
+
+```  
+text
+    要解析的 JSON 字符串，可以查看 JSON 一文了解 JSON 的语法。
+reviver 可选
+    一个函数，用来转换解析出的属性值。 
+```  
+
+
+**返回值**  
+
+```
+从 text 字符串解析出的一个 Object。
+``` 
+
+**异常**  
+
+```
+如果被解析的 JSON 字符串包含语法错误，则会抛出 SyntaxError 异常。
+```  
+
+
+```javascript
+JSON.parse('{}');              // {}
+JSON.parse('true');            // true
+JSON.parse('"Zoro"');           // "Zoro"
+JSON.parse('[1, 5, "false"]'); // [1, 5, "false"]
+JSON.parse('{"array":[1, 5, "false"]}');  //{ array: [1, 5, "false"] }
+JSON.parse('null');            // null
+
+```
+
+
+
 
