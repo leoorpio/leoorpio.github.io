@@ -1,0 +1,85 @@
+---
+layout: post
+date: 2016-08-03 15:38:44 +0800
+title: JS事件
+categories: JavaScript
+tags:
+  - JavaScript
+---  
+
+事件：用户或浏览器自身执行的某个动作。  
+
+页面效果图：
+
+![页面效果图](../images/02.png '页面效果图')
+
+代码如下：
+
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Event</title>
+</head>
+<body>
+	<form action="">
+		<input type="button" value="click me one" onclick="console.log('one former click')" onclick="console.log('one latter click')" onmousedown="console.log('one mousedown')">
+		<input type="button" value="click me two" id="myBtn">
+		<input type="button" value="click me three" id="myBtn2">
+	</form>
+
+	<script type="text/javascript">
+
+		var myBtn = document.getElementById('myBtn');
+		myBtn.onclick = function() {
+			console.log('two former click');
+		};
+
+		myBtn.onclick = function() {
+			console.log('two latter click');
+		};
+
+		myBtn.onmousedown = function() {
+			console.log('two mousedown');
+		};
+
+		var myBtn2 = document.getElementById('myBtn2');
+		myBtn2.addEventListener('click', function () {
+			console.log('three former click');
+		}, false);
+		myBtn2.addEventListener('click', function() {
+			console.log('three latter click')
+		}, false)
+		myBtn2.addEventListener('mousedown', function() {
+			console.log('three mousedown')
+		}, false)
+
+	</script>
+</body>
+</html>
+
+```
+
+分别单机三个按钮的结果如下：  
+
+```
+one mousedown  
+one former click 
+
+two mousedown  
+two latter click  
+
+three mousedown  
+three former click  
+three latter click
+
+```
+
+从上面的运行效果可以得知(在最新的chrome和Firefox运行okay)：
+
+```
+HTML事件处理程序：可以添加多个事件处理程序，如果同名，前者生效；
+DOM0级事件处理程序：可以添加多个事件处理程序，如果同名，后者覆盖前者；  
+DOM2级事件处理程序：可以添加多个事件处理程序，如果同名，根据定义的顺序响应事件。
+```
