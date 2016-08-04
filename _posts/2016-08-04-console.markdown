@@ -1,0 +1,16 @@
+---
+layout: post
+date: 2016-08-04 23:25:30 +0800
+title: console
+categories: browser
+tags:
+  - browser
+---
+
+编写JavaScript脚本的时候，我们会通过浏览器查看效果。其中除了debug之外，对console情有独钟。
+
+
+下面是一些博客对console的介绍：
+1. [你真的了解 console 吗](https://segmentfault.com/a/1190000000481884)
+2. [Firebug控制台详解](http://www.ruanyifeng.com/blog/2011/03/firebug_console_tutorial.html)
+3. [MDN:Console](https://developer.mozilla.org/zh-CN/docs/Web/API/Console)
